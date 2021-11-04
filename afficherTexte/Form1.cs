@@ -49,5 +49,17 @@ namespace afficherTexte
               int en string*/
 
         }
+
+        private void cmdafficheBoiteMsgButton_Click(object sender, EventArgs e)
+        {
+            const int anReference = 2021;
+            int age = anReference - int.Parse(anneeTextBox.Text);
+            MessageBox.Show("Allo");
+
+            MessageBox.Show(nomTextBox.Text + " " + prenomTextBox.Text + " " +"fete son " + age + "e anniversaire. " +
+                " Cette personne est nee en" +" " + int.Parse(anneeTextBox.Text));
+
+      
+        }
     }
 }

@@ -107,6 +107,7 @@ namespace afficherTexte
             this.cmdafficheBoiteMsgButton.TabIndex = 5;
             this.cmdafficheBoiteMsgButton.Text = "Afficher \"Allo\" dans une boîte de message";
             this.cmdafficheBoiteMsgButton.UseVisualStyleBackColor = false;
+            this.cmdafficheBoiteMsgButton.Click += new System.EventHandler(this.cmdafficheBoiteMsgButton_Click);
             // 
             // nomTextBox
             // 
