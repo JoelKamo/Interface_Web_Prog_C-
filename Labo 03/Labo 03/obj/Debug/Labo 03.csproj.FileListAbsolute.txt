@@ -1,0 +1,29 @@
+C:\Users\h.lewis\Dropbox (Informatique)\cours 420-P18-GG\Labos\Labo 03\Fichiers à copier sur P\Labo 03\Labo 03\Labo 03\bin\Debug\Labo 03.exe.config
+C:\Users\h.lewis\Dropbox (Informatique)\cours 420-P18-GG\Labos\Labo 03\Fichiers à copier sur P\Labo 03\Labo 03\Labo 03\bin\Debug\Labo 03.exe
+C:\Users\h.lewis\Dropbox (Informatique)\cours 420-P18-GG\Labos\Labo 03\Fichiers à copier sur P\Labo 03\Labo 03\Labo 03\bin\Debug\Labo 03.pdb
+C:\Users\h.lewis\Dropbox (Informatique)\cours 420-P18-GG\Labos\Labo 03\Fichiers à copier sur P\Labo 03\Labo 03\Labo 03\obj\Debug\Labo 03.csprojAssemblyReference.cache
+C:\Users\h.lewis\Dropbox (Informatique)\cours 420-P18-GG\Labos\Labo 03\Fichiers à copier sur P\Labo 03\Labo 03\Labo 03\obj\Debug\Labo_03.Form1.resources
+C:\Users\h.lewis\Dropbox (Informatique)\cours 420-P18-GG\Labos\Labo 03\Fichiers à copier sur P\Labo 03\Labo 03\Labo 03\obj\Debug\Labo_03.Properties.Resources.resources
+C:\Users\h.lewis\Dropbox (Informatique)\cours 420-P18-GG\Labos\Labo 03\Fichiers à copier sur P\Labo 03\Labo 03\Labo 03\obj\Debug\Labo 03.csproj.GenerateResource.cache
+C:\Users\h.lewis\Dropbox (Informatique)\cours 420-P18-GG\Labos\Labo 03\Fichiers à copier sur P\Labo 03\Labo 03\Labo 03\obj\Debug\Labo 03.csproj.CoreCompileInputs.cache
+C:\Users\h.lewis\Dropbox (Informatique)\cours 420-P18-GG\Labos\Labo 03\Fichiers à copier sur P\Labo 03\Labo 03\Labo 03\obj\Debug\Labo 03.exe
+C:\Users\h.lewis\Dropbox (Informatique)\cours 420-P18-GG\Labos\Labo 03\Fichiers à copier sur P\Labo 03\Labo 03\Labo 03\obj\Debug\Labo 03.pdb
+C:\Users\b.daigle\Dropbox (Informatique)\cours 420-P18-GG\Labos\Labo 03\Fichiers à copier sur onedrive\Labo 03\Labo 03\Labo 03\bin\Debug\Labo 03.exe.config
+C:\Users\b.daigle\Dropbox (Informatique)\cours 420-P18-GG\Labos\Labo 03\Fichiers à copier sur onedrive\Labo 03\Labo 03\Labo 03\bin\Debug\Labo 03.exe
+C:\Users\b.daigle\Dropbox (Informatique)\cours 420-P18-GG\Labos\Labo 03\Fichiers à copier sur onedrive\Labo 03\Labo 03\Labo 03\bin\Debug\Labo 03.pdb
+C:\Users\b.daigle\Dropbox (Informatique)\cours 420-P18-GG\Labos\Labo 03\Fichiers à copier sur onedrive\Labo 03\Labo 03\Labo 03\obj\Debug\Labo 03.csprojAssemblyReference.cache
+C:\Users\b.daigle\Dropbox (Informatique)\cours 420-P18-GG\Labos\Labo 03\Fichiers à copier sur onedrive\Labo 03\Labo 03\Labo 03\obj\Debug\Labo_03.Form1.resources
+C:\Users\b.daigle\Dropbox (Informatique)\cours 420-P18-GG\Labos\Labo 03\Fichiers à copier sur onedrive\Labo 03\Labo 03\Labo 03\obj\Debug\Labo_03.Properties.Resources.resources
+C:\Users\b.daigle\Dropbox (Informatique)\cours 420-P18-GG\Labos\Labo 03\Fichiers à copier sur onedrive\Labo 03\Labo 03\Labo 03\obj\Debug\Labo 03.csproj.GenerateResource.cache
+C:\Users\b.daigle\Dropbox (Informatique)\cours 420-P18-GG\Labos\Labo 03\Fichiers à copier sur onedrive\Labo 03\Labo 03\Labo 03\obj\Debug\Labo 03.csproj.CoreCompileInputs.cache
+C:\Users\b.daigle\Dropbox (Informatique)\cours 420-P18-GG\Labos\Labo 03\Fichiers à copier sur onedrive\Labo 03\Labo 03\Labo 03\obj\Debug\Labo 03.exe
+C:\Users\b.daigle\Dropbox (Informatique)\cours 420-P18-GG\Labos\Labo 03\Fichiers à copier sur onedrive\Labo 03\Labo 03\Labo 03\obj\Debug\Labo 03.pdb
+C:\Users\h.lewis\Dropbox (Informatique)\cours 420-P18-GG\labos\Labo 03\Fichiers à copier sur onedrive\Labo 03\Labo 03\Labo 03\bin\Debug\Labo 03.exe.config
+C:\Users\h.lewis\Dropbox (Informatique)\cours 420-P18-GG\labos\Labo 03\Fichiers à copier sur onedrive\Labo 03\Labo 03\Labo 03\bin\Debug\Labo 03.exe
+C:\Users\h.lewis\Dropbox (Informatique)\cours 420-P18-GG\labos\Labo 03\Fichiers à copier sur onedrive\Labo 03\Labo 03\Labo 03\bin\Debug\Labo 03.pdb
+C:\Users\h.lewis\Dropbox (Informatique)\cours 420-P18-GG\labos\Labo 03\Fichiers à copier sur onedrive\Labo 03\Labo 03\Labo 03\obj\Debug\Labo_03.Form1.resources
+C:\Users\h.lewis\Dropbox (Informatique)\cours 420-P18-GG\labos\Labo 03\Fichiers à copier sur onedrive\Labo 03\Labo 03\Labo 03\obj\Debug\Labo_03.Properties.Resources.resources
+C:\Users\h.lewis\Dropbox (Informatique)\cours 420-P18-GG\labos\Labo 03\Fichiers à copier sur onedrive\Labo 03\Labo 03\Labo 03\obj\Debug\Labo 03.csproj.GenerateResource.cache
+C:\Users\h.lewis\Dropbox (Informatique)\cours 420-P18-GG\labos\Labo 03\Fichiers à copier sur onedrive\Labo 03\Labo 03\Labo 03\obj\Debug\Labo 03.csproj.CoreCompileInputs.cache
+C:\Users\h.lewis\Dropbox (Informatique)\cours 420-P18-GG\labos\Labo 03\Fichiers à copier sur onedrive\Labo 03\Labo 03\Labo 03\obj\Debug\Labo 03.exe
+C:\Users\h.lewis\Dropbox (Informatique)\cours 420-P18-GG\labos\Labo 03\Fichiers à copier sur onedrive\Labo 03\Labo 03\Labo 03\obj\Debug\Labo 03.pdb

@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Programmation_Interfaces_Graphiques_C#\Exercice01\Exercice01\bin\Debug\netcoreapp3.1\Exercice01.exe
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Programmation_Interfaces_Graphiques_C#\Exercice01\Exercice01\bin\Debug\netcoreapp3.1\Exercice01.deps.json
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Programmation_Interfaces_Graphiques_C#\Exercice01\Exercice01\bin\Debug\netcoreapp3.1\Exercice01.runtimeconfig.json
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Programmation_Interfaces_Graphiques_C#\Exercice01\Exercice01\bin\Debug\netcoreapp3.1\Exercice01.runtimeconfig.dev.json
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Programmation_Interfaces_Graphiques_C#\Exercice01\Exercice01\bin\Debug\netcoreapp3.1\Exercice01.dll
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Programmation_Interfaces_Graphiques_C#\Exercice01\Exercice01\bin\Debug\netcoreapp3.1\Exercice01.pdb
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Programmation_Interfaces_Graphiques_C#\Exercice01\Exercice01\obj\Debug\netcoreapp3.1\Exercice01.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Programmation_Interfaces_Graphiques_C#\Exercice01\Exercice01\obj\Debug\netcoreapp3.1\Exercice01.cmdTexte1.resources
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Programmation_Interfaces_Graphiques_C#\Exercice01\Exercice01\obj\Debug\netcoreapp3.1\Exercice01.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Programmation_Interfaces_Graphiques_C#\Exercice01\Exercice01\obj\Debug\netcoreapp3.1\Exercice01.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Programmation_Interfaces_Graphiques_C#\Exercice01\Exercice01\obj\Debug\netcoreapp3.1\Exercice01.AssemblyInfo.cs
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Programmation_Interfaces_Graphiques_C#\Exercice01\Exercice01\obj\Debug\netcoreapp3.1\Exercice01.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Programmation_Interfaces_Graphiques_C#\Exercice01\Exercice01\obj\Debug\netcoreapp3.1\Exercice01.dll
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Programmation_Interfaces_Graphiques_C#\Exercice01\Exercice01\obj\Debug\netcoreapp3.1\Exercice01.pdb
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Programmation_Interfaces_Graphiques_C#\Exercice01\Exercice01\obj\Debug\netcoreapp3.1\Exercice01.genruntimeconfig.cache
