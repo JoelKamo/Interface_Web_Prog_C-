@@ -27,3 +27,13 @@ C:\Users\h.lewis\OneDrive - Cegep Gerald-Godin\PARTAGE 420-P18-GG\Labos\labo-00\
 C:\Users\h.lewis\OneDrive - Cegep Gerald-Godin\PARTAGE 420-P18-GG\Labos\labo-00\calculerSommeWinForms\obj\Debug\calculerSommeWinForms.csproj.CoreCompileInputs.cache
 C:\Users\h.lewis\OneDrive - Cegep Gerald-Godin\PARTAGE 420-P18-GG\Labos\labo-00\calculerSommeWinForms\obj\Debug\calculerSommeWinForms.exe
 C:\Users\h.lewis\OneDrive - Cegep Gerald-Godin\PARTAGE 420-P18-GG\Labos\labo-00\calculerSommeWinForms\obj\Debug\calculerSommeWinForms.pdb
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\calculerSommeWinForms\bin\Debug\calculerSommeWinForms.exe.config
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\calculerSommeWinForms\bin\Debug\calculerSommeWinForms.exe
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\calculerSommeWinForms\bin\Debug\calculerSommeWinForms.pdb
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\calculerSommeWinForms\obj\Debug\calculerSommeWinForms.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\calculerSommeWinForms\obj\Debug\labo_00.Form1.resources
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\calculerSommeWinForms\obj\Debug\calculerSommeWinForms.Properties.Resources.resources
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\calculerSommeWinForms\obj\Debug\calculerSommeWinForms.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\calculerSommeWinForms\obj\Debug\calculerSommeWinForms.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\calculerSommeWinForms\obj\Debug\calculerSommeWinForms.exe
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\calculerSommeWinForms\obj\Debug\calculerSommeWinForms.pdb

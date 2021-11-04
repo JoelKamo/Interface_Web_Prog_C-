@@ -88,6 +88,7 @@
             this.tb_nbr1.Name = "tb_nbr1";
             this.tb_nbr1.Size = new System.Drawing.Size(74, 20);
             this.tb_nbr1.TabIndex = 5;
+            this.tb_nbr1.Text = "2";
             // 
             // tb_nbr2
             // 
@@ -95,6 +96,7 @@
             this.tb_nbr2.Name = "tb_nbr2";
             this.tb_nbr2.Size = new System.Drawing.Size(74, 20);
             this.tb_nbr2.TabIndex = 6;
+            this.tb_nbr2.Text = "5";
             // 
             // Form1
             // 
