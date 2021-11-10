@@ -20,7 +20,9 @@ namespace GestionFacturesClients
         public int QuantiteArticle { get; set; }
         public double PrixArticle { get; set; }
         public  double TotalArticle { get; set; }
+        public string TypeClients { get; set; }
 
+        public Clients C { get; set; }
         public static int cmp = 0;
 
         public Facture()
