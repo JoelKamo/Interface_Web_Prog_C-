@@ -1,5 +1,5 @@
 ﻿
-namespace GestionEmployes
+namespace GestionFacturesClients
 {
     partial class Form1
     {

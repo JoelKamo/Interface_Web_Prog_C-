@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\Cours Shawinigan\\COURS_BLOC_2\\Interface_Web_Prog_C#\\Projet Final Qualite_Logicielle\\GestionEmployes\\GestionFacturesClients.csproj": {}
+    "C:\\Users\\User\\Desktop\\Cours Shawinigan\\COURS_BLOC_2\\Interface_Web_Prog_C#\\Projet Final Qualite_Logicielle\\GestionFacturesClients\\GestionFacturesClients.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\Cours Shawinigan\\COURS_BLOC_2\\Interface_Web_Prog_C#\\Projet Final Qualite_Logicielle\\GestionEmployes\\GestionFacturesClients.csproj": {
+    "C:\\Users\\User\\Desktop\\Cours Shawinigan\\COURS_BLOC_2\\Interface_Web_Prog_C#\\Projet Final Qualite_Logicielle\\GestionFacturesClients\\GestionFacturesClients.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\Cours Shawinigan\\COURS_BLOC_2\\Interface_Web_Prog_C#\\Projet Final Qualite_Logicielle\\GestionEmployes\\GestionFacturesClients.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Desktop\\Cours Shawinigan\\COURS_BLOC_2\\Interface_Web_Prog_C#\\Projet Final Qualite_Logicielle\\GestionFacturesClients\\GestionFacturesClients.csproj",
         "projectName": "GestionFacturesClients",
-        "projectPath": "C:\\Users\\User\\Desktop\\Cours Shawinigan\\COURS_BLOC_2\\Interface_Web_Prog_C#\\Projet Final Qualite_Logicielle\\GestionEmployes\\GestionFacturesClients.csproj",
+        "projectPath": "C:\\Users\\User\\Desktop\\Cours Shawinigan\\COURS_BLOC_2\\Interface_Web_Prog_C#\\Projet Final Qualite_Logicielle\\GestionFacturesClients\\GestionFacturesClients.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\Cours Shawinigan\\COURS_BLOC_2\\Interface_Web_Prog_C#\\Projet Final Qualite_Logicielle\\GestionEmployes\\obj\\",
+        "outputPath": "C:\\Users\\User\\Desktop\\Cours Shawinigan\\COURS_BLOC_2\\Interface_Web_Prog_C#\\Projet Final Qualite_Logicielle\\GestionFacturesClients\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
