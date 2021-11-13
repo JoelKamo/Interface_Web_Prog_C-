@@ -1,0 +1,16 @@
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\bin\Debug\netcoreapp3.1\GestionFactureClient.exe
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\bin\Debug\netcoreapp3.1\GestionFactureClient.deps.json
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\bin\Debug\netcoreapp3.1\GestionFactureClient.runtimeconfig.json
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\bin\Debug\netcoreapp3.1\GestionFactureClient.runtimeconfig.dev.json
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\bin\Debug\netcoreapp3.1\GestionFactureClient.dll
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\bin\Debug\netcoreapp3.1\GestionFactureClient.pdb
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\obj\Debug\netcoreapp3.1\GestionFactureClient.csprojAssemblyReference.cache
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\obj\Debug\netcoreapp3.1\GestionFactureClient.Form1.resources
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\obj\Debug\netcoreapp3.1\GestionFactureClient.Properties.Resources.resources
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\obj\Debug\netcoreapp3.1\GestionFactureClient.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\obj\Debug\netcoreapp3.1\GestionFactureClient.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\obj\Debug\netcoreapp3.1\GestionFactureClient.AssemblyInfo.cs
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\obj\Debug\netcoreapp3.1\GestionFactureClient.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\obj\Debug\netcoreapp3.1\GestionFactureClient.dll
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\obj\Debug\netcoreapp3.1\GestionFactureClient.pdb
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\obj\Debug\netcoreapp3.1\GestionFactureClient.genruntimeconfig.cache
