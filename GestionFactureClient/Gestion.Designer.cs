@@ -40,6 +40,12 @@ namespace GestionFactureClient
             this.txt_PrixDetail = new System.Windows.Forms.TextBox();
             this.txt_PrixVendu = new System.Windows.Forms.TextBox();
             this.dgv_Articles = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lb_cmp = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -53,12 +59,6 @@ namespace GestionFactureClient
             this.button1 = new System.Windows.Forms.Button();
             this.label = new System.Windows.Forms.Label();
             this.txt_NoSerie = new System.Windows.Forms.TextBox();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Articles)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -154,11 +154,43 @@ namespace GestionFactureClient
             this.Column4,
             this.Column5,
             this.Column6});
+            this.dgv_Articles.Enabled = false;
             this.dgv_Articles.Location = new System.Drawing.Point(12, 233);
             this.dgv_Articles.Name = "dgv_Articles";
             this.dgv_Articles.RowTemplate.Height = 25;
             this.dgv_Articles.Size = new System.Drawing.Size(584, 176);
             this.dgv_Articles.TabIndex = 25;
+            this.dgv_Articles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Articles_CellContentClick);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "ID";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "No Série";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Nom Article";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Quantité Inventaire";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Prix Détail";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Prix Vendu";
+            this.Column6.Name = "Column6";
             // 
             // lb_cmp
             // 
@@ -233,6 +265,7 @@ namespace GestionFactureClient
             this.button5.Text = "Supprimer";
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -247,6 +280,7 @@ namespace GestionFactureClient
             this.button4.Text = "Quitter";
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
@@ -275,6 +309,7 @@ namespace GestionFactureClient
             this.button2.Text = "Modifier";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -306,36 +341,6 @@ namespace GestionFactureClient
             this.txt_NoSerie.Name = "txt_NoSerie";
             this.txt_NoSerie.Size = new System.Drawing.Size(215, 23);
             this.txt_NoSerie.TabIndex = 35;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "ID";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "No Série";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Nom Article";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Quantité Inventaire";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Prix Détail";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Prix Vendu";
-            this.Column6.Name = "Column6";
             // 
             // Gestion
             // 
