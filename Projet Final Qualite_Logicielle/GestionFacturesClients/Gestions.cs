@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GestionFacturesClients
 {
-    public partial class Form1 : Form
+    public partial class Gestions : Form
     {
-        public Form1()
+        public Gestions()
         {
             InitializeComponent();
         }

@@ -46,7 +46,6 @@ namespace GestionFactureClient
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lb_cmp = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -191,15 +190,6 @@ namespace GestionFactureClient
             // 
             this.Column6.HeaderText = "Prix Vendu";
             this.Column6.Name = "Column6";
-            // 
-            // lb_cmp
-            // 
-            this.lb_cmp.AutoSize = true;
-            this.lb_cmp.Location = new System.Drawing.Point(300, 418);
-            this.lb_cmp.Name = "lb_cmp";
-            this.lb_cmp.Size = new System.Drawing.Size(24, 15);
-            this.lb_cmp.TabIndex = 32;
-            this.lb_cmp.Text = "../..";
             // 
             // button9
             // 
@@ -350,7 +340,6 @@ namespace GestionFactureClient
             this.Controls.Add(this.txt_NoSerie);
             this.Controls.Add(this.label);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.lb_cmp);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -388,7 +377,6 @@ namespace GestionFactureClient
         private System.Windows.Forms.TextBox txt_PrixDetail;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.DataGridView dgv_Articles;
-        private System.Windows.Forms.Label lb_cmp;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;

@@ -12,6 +12,8 @@ namespace GestionFactureClient
 {
     public partial class Form1 : Form
     {
+
+        Gestion gest = new Gestion();
         public Form1()
         {
             InitializeComponent();
@@ -24,7 +26,13 @@ namespace GestionFactureClient
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(" Gestion Form ");
+            gest.Show();
+           
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
