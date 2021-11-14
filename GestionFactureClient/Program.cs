@@ -11,6 +11,9 @@ namespace GestionFactureClient
         /// <summary>
         ///  The main entry point for the application.
         /// </summary>
+
+        public static List<Articles> Articles = new List<Articles>();
+
         [STAThread]
         static void Main()
         {

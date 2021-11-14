@@ -78,7 +78,7 @@ namespace GestionFactureClient
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(170, 55);
             this.button4.TabIndex = 3;
-            this.button4.Text = "Ajout Nouveau Client";
+            this.button4.Text = "Contact";
             this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button4.UseVisualStyleBackColor = true;
             // 
@@ -92,7 +92,7 @@ namespace GestionFactureClient
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(152, 55);
             this.button3.TabIndex = 2;
-            this.button3.Text = "Création Factures";
+            this.button3.Text = "Factures";
             this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button3.UseVisualStyleBackColor = true;
             // 
@@ -106,9 +106,10 @@ namespace GestionFactureClient
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(152, 55);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Gestion Entreprise";
+            this.button2.Text = "Gestion";
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
