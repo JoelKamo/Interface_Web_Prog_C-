@@ -14,6 +14,9 @@ namespace GestionFactureClient
     {
 
         Gestion gest = new Gestion();
+        Contact cont = new Contact();
+        //Factures fact = new Factures();
+        
         public Form1()
         {
             InitializeComponent();
@@ -32,7 +35,32 @@ namespace GestionFactureClient
 
         private void button9_Click(object sender, EventArgs e)
         {
-            this.Close();
+            
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            cont.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //fact.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

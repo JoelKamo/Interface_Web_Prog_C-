@@ -13,6 +13,8 @@ namespace GestionFactureClient
         /// </summary>
 
         public static List<Articles> Articles = new List<Articles>();
+        public static List<Client> Client = new List<Client>();
+
 
         [STAThread]
         static void Main()
