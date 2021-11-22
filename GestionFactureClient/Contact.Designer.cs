@@ -30,24 +30,16 @@ namespace GestionFactureClient
         private void InitializeComponent()
         {
             this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txt_IDClient = new System.Windows.Forms.TextBox();
-            this.txt_NoClient = new System.Windows.Forms.TextBox();
             this.txt_Nom = new System.Windows.Forms.TextBox();
             this.txt_Prenom = new System.Windows.Forms.TextBox();
             this.txt_Adresse = new System.Windows.Forms.TextBox();
             this.txt_Ville = new System.Windows.Forms.TextBox();
             this.dgv_Client = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button6 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -56,6 +48,11 @@ namespace GestionFactureClient
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Client)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -68,15 +65,6 @@ namespace GestionFactureClient
             this.label4.Size = new System.Drawing.Size(55, 15);
             this.label4.TabIndex = 11;
             this.label4.Text = "IDClient :";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 70);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 15);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "NoClient :";
             // 
             // label2
             // 
@@ -121,13 +109,6 @@ namespace GestionFactureClient
             this.txt_IDClient.Size = new System.Drawing.Size(215, 23);
             this.txt_IDClient.TabIndex = 17;
             // 
-            // txt_NoClient
-            // 
-            this.txt_NoClient.Location = new System.Drawing.Point(104, 62);
-            this.txt_NoClient.Name = "txt_NoClient";
-            this.txt_NoClient.Size = new System.Drawing.Size(215, 23);
-            this.txt_NoClient.TabIndex = 18;
-            // 
             // txt_Nom
             // 
             this.txt_Nom.Location = new System.Drawing.Point(104, 102);
@@ -162,7 +143,6 @@ namespace GestionFactureClient
             this.dgv_Client.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Client.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
-            this.Column2,
             this.Column3,
             this.Column4,
             this.Column5,
@@ -174,36 +154,6 @@ namespace GestionFactureClient
             this.dgv_Client.Size = new System.Drawing.Size(485, 176);
             this.dgv_Client.TabIndex = 26;
             this.dgv_Client.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Client_CellContentClick_1);
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "ID Client";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "No Client";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Nom";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Prénom";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Adresse";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Ville";
-            this.Column6.Name = "Column6";
             // 
             // button6
             // 
@@ -311,6 +261,31 @@ namespace GestionFactureClient
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "ID Client";
+            this.Column1.Name = "Column1";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Nom";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Prénom";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Adresse";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Ville";
+            this.Column6.Name = "Column6";
+            // 
             // Contact
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -325,13 +300,11 @@ namespace GestionFactureClient
             this.Controls.Add(this.txt_Adresse);
             this.Controls.Add(this.txt_Prenom);
             this.Controls.Add(this.txt_Nom);
-            this.Controls.Add(this.txt_NoClient);
             this.Controls.Add(this.txt_IDClient);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
             this.Name = "Contact";
             this.Text = "Contact";
@@ -345,24 +318,16 @@ namespace GestionFactureClient
         #endregion
 
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txt_IDClient;
-        private System.Windows.Forms.TextBox txt_NoClient;
         private System.Windows.Forms.TextBox txt_Nom;
         private System.Windows.Forms.TextBox txt_Prenom;
         private System.Windows.Forms.TextBox txt_Adresse;
         private System.Windows.Forms.TextBox txt_Ville;
         private System.Windows.Forms.DataGridView dgv_Client;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Panel panel1;
@@ -371,5 +336,10 @@ namespace GestionFactureClient
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
     }
 }

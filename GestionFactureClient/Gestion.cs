@@ -10,6 +10,7 @@ namespace GestionFactureClient
 {
     public partial class Gestion : Form
     {
+        systemeController smc = new systemeController();
         public Gestion()
         {
             InitializeComponent();
@@ -19,14 +20,14 @@ namespace GestionFactureClient
         // Ajouter Articles
         private void button1_Click(object sender, EventArgs e)
         {
-            Articles a = new Articles();
-            a.NoSerie = txt_NoSerie.Text;
-            a.NomArticle = txt_NomArticle.Text;
-            a.QuantiteInventaire = int.Parse(txt_QuantiteInventaire.Text);
-            a.PrixDetail = double.Parse(txt_PrixDetail.Text);
-            a.PrixVendu = double.Parse(txt_PrixVendu.Text);
 
-            Program.Articles.Add(a);
+
+            string NomArticle = txt_NomArticle.Text;
+            int QuantiteInventaire = int.Parse(txt_QuantiteInventaire.Text);
+            double PrixDetail = double.Parse(txt_PrixDetail.Text);
+            double PrixVendu = double.Parse(txt_PrixVendu.Text);
+
+            Articles article = smc.ArticleCreate(NomArticle, QuantiteInventaire, PrixDetail, PrixVendu);
 
             charger();
 
@@ -36,12 +37,13 @@ namespace GestionFactureClient
         // Fonction Charger 
         public void charger()
         {
+            List<Articles> liste = smc.ArticleGetAll();
             dgv_Articles.Rows.Clear();
-            for (int i = 0; i < Program.Articles.Count; i++)
+            for (int i = 0; i < liste.Count; i++)
             {
-                dgv_Articles.Rows.Add(Program.Articles[i].ID, Program.Articles[i].NoSerie,
-                Program.Articles[i].NomArticle, Program.Articles[i].QuantiteInventaire,
-                Program.Articles[i].PrixDetail, Program.Articles[i].PrixVendu);
+                dgv_Articles.Rows.Add(liste[i].IdArticle, 0,
+                liste[i].NomArticle, liste[i].QuantiteInventaire,
+                liste[i].PrixDetail, liste[i].PrixVendu);
             }
         }
 
@@ -49,17 +51,21 @@ namespace GestionFactureClient
         // Modifier Articles
         private void button2_Click(object sender, EventArgs e)
         {
-            for (int i = 0; i < Program.Articles.Count; i++)
+            List<Articles> liste = smc.ArticleGetAll();
+
+            for (int i = 0; i < liste.Count; i++)
             {
-                if(txt_ID.Text.Equals(Program.Articles[i].ID.ToString()))
+                if (Convert.ToInt32(txt_ID.Text).Equals(liste[i].IdArticle))
                 {
-                    Program.Articles[i].NoSerie = txt_NoSerie.Text;
-                    Program.Articles[i].NomArticle = txt_NomArticle.Text;
-                    Program.Articles[i].QuantiteInventaire = int.Parse(txt_QuantiteInventaire.Text);
-                    Program.Articles[i].PrixDetail = double.Parse(txt_PrixDetail.Text);
-                    Program.Articles[i].PrixVendu = double.Parse(txt_PrixVendu.Text);
-                   
-                }  
+
+                    string NomArticle = txt_NomArticle.Text;
+                    int QuantInventaire = int.Parse(txt_QuantiteInventaire.Text);
+                    double PrixDetail = double.Parse(txt_PrixDetail.Text);
+                    double PrixVente = double.Parse(txt_PrixVendu.Text);
+
+                    smc.ArticleUpdate(liste[i].IdArticle, NomArticle, QuantInventaire, PrixDetail, PrixVente);
+
+                }
             }
 
             charger();
@@ -70,7 +76,7 @@ namespace GestionFactureClient
         private void dgv_Articles_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             txt_ID.Text = dgv_Articles.CurrentRow.Cells[0].Value.ToString();
-            txt_NoSerie.Text = dgv_Articles.CurrentRow.Cells[1].Value.ToString();
+            //txt_NoSerie.Text = dgv_Articles.CurrentRow.Cells[1].Value.ToString();
             txt_NomArticle.Text = dgv_Articles.CurrentRow.Cells[2].Value.ToString();
             txt_QuantiteInventaire.Text = dgv_Articles.CurrentRow.Cells[3].Value.ToString();
             txt_PrixDetail.Text = dgv_Articles.CurrentRow.Cells[4].Value.ToString();
@@ -81,14 +87,16 @@ namespace GestionFactureClient
         //Supprimer les articles
         private void button5_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show("Voulez-vous vraiment supprimer ?", "Réponse",MessageBoxButtons.YesNo,
+            List<Articles> liste = smc.ArticleGetAll();
+
+            if (MessageBox.Show("Voulez-vous vraiment supprimer ?", "Réponse", MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question) == DialogResult.Yes)
-            { 
-                for (int i = 0; i < Program.Articles.Count; i++)
+            {
+                for (int i = 0; i < liste.Count; i++)
                 {
-                    if (txt_ID.Text.Equals(Program.Articles[i].ID.ToString()))
+                    if (Convert.ToInt32(txt_ID.Text).Equals(liste[i].IdArticle))
                     {
-                        Program.Articles.RemoveAt(i);
+                        smc.ArticlesDelete(liste[i].IdArticle);
 
                     }
                 }
@@ -104,6 +112,7 @@ namespace GestionFactureClient
             this.Close();
 
         }
+
 
 
 

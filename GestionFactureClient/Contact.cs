@@ -10,6 +10,8 @@ namespace GestionFactureClient
 {
     public partial class Contact : Form
     {
+
+        systemeController smc = new systemeController();
         public Contact()
         {
             InitializeComponent();
@@ -18,15 +20,13 @@ namespace GestionFactureClient
         // Ajouter Client
         private void button1_Click(object sender, EventArgs e)
         {
-            Client c = new Client();
-            c.NoClient = txt_NoClient.Text;
-            c.Nom = txt_Nom.Text;
-            c.Prenom = txt_Prenom.Text;
-            c.Adresse = txt_Adresse.Text;
-            c.Ville = txt_Ville.Text;
 
 
-            Program.Client.Add(c);
+            string Nom = txt_Nom.Text;
+            string Prenom = txt_Prenom.Text;
+            string Adresse = txt_Adresse.Text;
+            string Ville = txt_Ville.Text;
+            Client c = smc.ClientCreate(Nom, Prenom, Adresse, Ville);
 
             charger();
 
@@ -36,12 +36,13 @@ namespace GestionFactureClient
         // Fonction Charger 
         public void charger()
         {
+            List<Client> liste = smc.ClientGetAll();
             dgv_Client.Rows.Clear();
-            for (int i = 0; i < Program.Client.Count; i++)
+            for (int i = 0; i < liste.Count; i++)
             {
-                dgv_Client.Rows.Add(Program.Client[i].IDClient, Program.Client[i].NoClient,
-                Program.Client[i].Nom, Program.Client[i].Prenom, Program.Client[i].Adresse,
-                Program.Client[i].Ville);
+                dgv_Client.Rows.Add(liste[i].IdClient, 0,
+                liste[i].Nom, liste[i].Prenom, liste[i].Adresse,
+                liste[i].Ville);
             }
         }
 
@@ -61,14 +62,16 @@ namespace GestionFactureClient
         //Supprimer les articles
         private void button5_Click_1(object sender, EventArgs e)
         {
+            List<Client> liste = smc.ClientGetAll();
+
             if (MessageBox.Show("Voulez-vous vraiment supprimer ?", "Réponse", MessageBoxButtons.YesNo,
                 MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                for (int i = 0; i < Program.Client.Count; i++)
+                for (int i = 0; i < liste.Count; i++)
                 {
-                    if (txt_IDClient.Text.Equals(Program.Client[i].IDClient.ToString()))
+                    if (Convert.ToInt32(txt_IDClient.Text).Equals(liste[i].IdClient))
                     {
-                        Program.Client.RemoveAt(i);
+                        smc.ClientDelete(liste[i].IdClient);
 
                     }
                 }
@@ -81,16 +84,19 @@ namespace GestionFactureClient
         // Modifier Contact Client
         private void button2_Click_1(object sender, EventArgs e)
         {
-            for (int i = 0; i < Program.Client.Count; i++)
-            {
-                if (txt_IDClient.Text.Equals(Program.Client[i].IDClient.ToString()))
-                {
-                    Program.Client[i].NoClient = txt_NoClient.Text;
-                    Program.Client[i].Nom = txt_Nom.Text;
-                    Program.Client[i].Prenom = txt_Prenom.Text;
-                    Program.Client[i].Adresse = txt_Adresse.Text;
-                    Program.Client[i].Ville = txt_Ville.Text;
+            List<Client> liste = smc.ClientGetAll();
 
+            for (int i = 0; i < liste.Count; i++)
+            {
+                if (Convert.ToInt32(txt_IDClient.Text).Equals(liste[i].IdClient))
+                {
+
+                    string Nom = txt_Nom.Text;
+                    string Prenom = txt_Prenom.Text;
+                    string Adresse = txt_Adresse.Text;
+                    string Ville = txt_Ville.Text;
+
+                    smc.ClientUpdate(liste[i].IdClient, Nom, Prenom, Adresse, Ville);
                 }
             }
 
@@ -102,7 +108,7 @@ namespace GestionFactureClient
         private void dgv_Client_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
             txt_IDClient.Text = dgv_Client.CurrentRow.Cells[0].Value.ToString();
-            txt_NoClient.Text = dgv_Client.CurrentRow.Cells[1].Value.ToString();
+            //txt_NoClient.Text = dgv_Client.CurrentRow.Cells[1].Value.ToString();
             txt_Nom.Text = dgv_Client.CurrentRow.Cells[2].Value.ToString();
             txt_Prenom.Text = dgv_Client.CurrentRow.Cells[3].Value.ToString();
             txt_Adresse.Text = dgv_Client.CurrentRow.Cells[4].Value.ToString();

@@ -40,12 +40,6 @@ namespace GestionFactureClient
             this.txt_PrixDetail = new System.Windows.Forms.TextBox();
             this.txt_PrixVendu = new System.Windows.Forms.TextBox();
             this.dgv_Articles = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -56,8 +50,11 @@ namespace GestionFactureClient
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.label = new System.Windows.Forms.Label();
-            this.txt_NoSerie = new System.Windows.Forms.TextBox();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Articles)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -148,7 +145,6 @@ namespace GestionFactureClient
             this.dgv_Articles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Articles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
-            this.Column2,
             this.Column3,
             this.Column4,
             this.Column5,
@@ -160,36 +156,6 @@ namespace GestionFactureClient
             this.dgv_Articles.Size = new System.Drawing.Size(584, 176);
             this.dgv_Articles.TabIndex = 25;
             this.dgv_Articles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Articles_CellContentClick);
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "ID";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "No Série";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Nom Article";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Quantité Inventaire";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Prix Détail";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Prix Vendu";
-            this.Column6.Name = "Column6";
             // 
             // button9
             // 
@@ -316,29 +282,36 @@ namespace GestionFactureClient
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // label
+            // Column1
             // 
-            this.label.AutoSize = true;
-            this.label.Location = new System.Drawing.Point(30, 64);
-            this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(57, 15);
-            this.label.TabIndex = 34;
-            this.label.Text = "No Série :";
+            this.Column1.HeaderText = "ID";
+            this.Column1.Name = "Column1";
             // 
-            // txt_NoSerie
+            // Column3
             // 
-            this.txt_NoSerie.Location = new System.Drawing.Point(175, 56);
-            this.txt_NoSerie.Name = "txt_NoSerie";
-            this.txt_NoSerie.Size = new System.Drawing.Size(215, 23);
-            this.txt_NoSerie.TabIndex = 35;
+            this.Column3.HeaderText = "Nom Article";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Quantité Inventaire";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Prix Détail";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Prix Vendu";
+            this.Column6.Name = "Column6";
             // 
             // Gestion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(783, 450);
-            this.Controls.Add(this.txt_NoSerie);
-            this.Controls.Add(this.label);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
@@ -388,10 +361,7 @@ namespace GestionFactureClient
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txt_PrixVendu;
-        private System.Windows.Forms.Label label;
-        private System.Windows.Forms.TextBox txt_NoSerie;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
