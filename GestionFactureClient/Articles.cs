@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GestionFactureClient
 {
-    class Articles
+    public class Articles
     {
 
         private string nomArticle;

@@ -16,3 +16,13 @@ C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\Gestio
 C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\obj\Debug\netcoreapp3.1\GestionFactureClient.genruntimeconfig.cache
 C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\obj\Debug\netcoreapp3.1\GestionFactureClient.Gestion.resources
 C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\obj\Debug\netcoreapp3.1\GestionFactureClient.Contact.resources
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.dll
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\bin\Debug\netcoreapp3.1\K4os.Compression.LZ4.Streams.dll
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\bin\Debug\netcoreapp3.1\K4os.Hash.xxHash.dll
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\bin\Debug\netcoreapp3.1\MySql.Data.dll
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\bin\Debug\netcoreapp3.1\Ubiety.Dns.Core.dll
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\bin\Debug\netcoreapp3.1\ZstdNet.dll
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\obj\Debug\netcoreapp3.1\GestionFactureClient.csproj.CopyComplete

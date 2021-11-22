@@ -4,7 +4,7 @@ using System.Text;
 
 namespace GestionFactureClient
 {
-    class Facture
+    public class Facture
     {
 
         private int idFacture;
