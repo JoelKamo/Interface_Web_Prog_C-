@@ -13,9 +13,10 @@ namespace GestionFactureClient
     public partial class Form1 : Form
     {
 
-        Gestion gest = new Gestion();
-        Contact cont = new Contact();
-        Gestions GestionFacture = new Gestions();
+        // Declarartion des variables de type interfaces, pour que le clic sur nos trois onglets fonctionnent
+        Gestion Gestion = new Gestion();
+        Contact Contact = new Contact();
+        GestionsFacture Factures = new GestionsFacture();
         
         public Form1()
         {
@@ -29,7 +30,7 @@ namespace GestionFactureClient
 
         private void button2_Click(object sender, EventArgs e)
         {
-            gest.Show();
+            Gestion.Show();
            
         }
 
@@ -40,12 +41,12 @@ namespace GestionFactureClient
 
         private void button4_Click(object sender, EventArgs e)
         {
-            cont.Show();
+            Contact.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            GestionFacture.Show();
+            Factures.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)

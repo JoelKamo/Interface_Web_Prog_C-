@@ -1,7 +1,7 @@
 ﻿
 namespace GestionFactureClient
 {
-    partial class Gestions
+    partial class GestionsFacture
     {
         /// <summary>
         ///  Required designer variable.
@@ -268,7 +268,7 @@ namespace GestionFactureClient
             this.cb_TypeClients.TabIndex = 29;
             this.cb_TypeClients.SelectedIndexChanged += new System.EventHandler(this.cb_TypeClients_SelectedIndexChanged);
             // 
-            // Gestions
+            // GestionsFacture
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -293,7 +293,7 @@ namespace GestionFactureClient
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label1);
-            this.Name = "Gestions";
+            this.Name = "GestionsFacture";
             this.Text = "Gestion Factures Clients";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_FactureClients)).EndInit();
