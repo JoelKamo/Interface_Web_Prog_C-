@@ -52,7 +52,7 @@ namespace GestionFactureClient
             this.txt_PrixTotalArticle = new System.Windows.Forms.TextBox();
             this.lb_cmp = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.cb_TypeClients = new System.Windows.Forms.ComboBox();
+            this.cb_Articles = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_FactureClients)).BeginInit();
             this.SuspendLayout();
             // 
@@ -259,21 +259,21 @@ namespace GestionFactureClient
             this.label9.TabIndex = 28;
             this.label9.Text = "Articles :";
             // 
-            // cb_TypeClients
+            // cb_Articles
             // 
-            this.cb_TypeClients.FormattingEnabled = true;
-            this.cb_TypeClients.Location = new System.Drawing.Point(122, 46);
-            this.cb_TypeClients.Name = "cb_TypeClients";
-            this.cb_TypeClients.Size = new System.Drawing.Size(249, 23);
-            this.cb_TypeClients.TabIndex = 29;
-            this.cb_TypeClients.SelectedIndexChanged += new System.EventHandler(this.cb_TypeClients_SelectedIndexChanged);
+            this.cb_Articles.FormattingEnabled = true;
+            this.cb_Articles.Location = new System.Drawing.Point(122, 46);
+            this.cb_Articles.Name = "cb_Articles";
+            this.cb_Articles.Size = new System.Drawing.Size(249, 23);
+            this.cb_Articles.TabIndex = 29;
+            this.cb_Articles.SelectedIndexChanged += new System.EventHandler(this.cb_TypeClients_SelectedIndexChanged);
             // 
             // GestionsFacture
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(545, 496);
-            this.Controls.Add(this.cb_TypeClients);
+            this.Controls.Add(this.cb_Articles);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.lb_cmp);
             this.Controls.Add(this.txt_PrixTotalArticle);
@@ -323,7 +323,7 @@ namespace GestionFactureClient
         private System.Windows.Forms.TextBox txt_PrixTotalArticle;
         private System.Windows.Forms.Label lb_cmp;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox cb_TypeClients;
+        private System.Windows.Forms.ComboBox cb_Articles;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Client;
         private System.Windows.Forms.DataGridViewTextBoxColumn Articles;

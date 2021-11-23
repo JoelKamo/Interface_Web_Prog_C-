@@ -26,4 +26,4 @@ C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\Gestio
 C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\bin\Debug\netcoreapp3.1\ZstdNet.dll
 C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\obj\Debug\netcoreapp3.1\GestionFactureClient.csproj.CopyComplete
-C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\obj\Debug\netcoreapp3.1\GestionFactureClient.Gestions.resources
+C:\Users\User\Desktop\Cours Shawinigan\COURS_BLOC_2\Interface_Web_Prog_C#\GestionFactureClient\obj\Debug\netcoreapp3.1\GestionFactureClient.GestionsFacture.resources

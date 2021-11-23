@@ -46,8 +46,15 @@ namespace GestionFactureClient
         // Lui il dois renvoyez le prix total de tous les articles qui sont dans le dataView
         private void txt_TotalArticle_TextChanged(object sender, EventArgs e)
         {
+            double somme = 0;
+            for(int i = 0; i < dgv_FactureClients.Rows.Count; i++)
+            {
+                somme += Convert.ToInt32(dgv_FactureClients.Rows[i].Cells[3].Value);
+            }
 
+            MessageBox.Show(somme.ToString());
         }
+
 
         private void label5_Click(object sender, EventArgs e)
         {
@@ -77,15 +84,22 @@ namespace GestionFactureClient
         private void dgv_Clients_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+            txt_id.Text = dgv_FactureClients.CurrentRow.Cells[0].Value.ToString();
+            cb_Clients.Text = dgv_FactureClients.CurrentRow.Cells[1].Value.ToString();
+            cb_Articles.Text = dgv_FactureClients.CurrentRow.Cells[2].Value.ToString();
+            txt_PrixArticle.Text = dgv_FactureClients.CurrentRow.Cells[3].Value.ToString();
+          
+
         }
 
         //Ajouter Article dans le dataView
         private void button1_Click(object sender, EventArgs e)
         {
-     
-
-
+            
         }
+
+
+    
 
         //Modifier Article dans le dataView
         private void button2_Click(object sender, EventArgs e)
