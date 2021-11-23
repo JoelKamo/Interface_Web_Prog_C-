@@ -40,6 +40,11 @@ namespace GestionFactureClient
             this.txt_Adresse = new System.Windows.Forms.TextBox();
             this.txt_Ville = new System.Windows.Forms.TextBox();
             this.dgv_Client = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button6 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -48,11 +53,6 @@ namespace GestionFactureClient
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Client)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -69,7 +69,7 @@ namespace GestionFactureClient
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(21, 110);
+            this.label2.Location = new System.Drawing.Point(24, 75);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 15);
             this.label2.TabIndex = 13;
@@ -78,7 +78,7 @@ namespace GestionFactureClient
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 155);
+            this.label3.Location = new System.Drawing.Point(20, 134);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 15);
             this.label3.TabIndex = 14;
@@ -87,7 +87,7 @@ namespace GestionFactureClient
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(21, 196);
+            this.label5.Location = new System.Drawing.Point(21, 188);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(54, 15);
             this.label5.TabIndex = 15;
@@ -96,7 +96,7 @@ namespace GestionFactureClient
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(21, 235);
+            this.label6.Location = new System.Drawing.Point(23, 235);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 15);
             this.label6.TabIndex = 16;
@@ -111,21 +111,21 @@ namespace GestionFactureClient
             // 
             // txt_Nom
             // 
-            this.txt_Nom.Location = new System.Drawing.Point(104, 102);
+            this.txt_Nom.Location = new System.Drawing.Point(104, 70);
             this.txt_Nom.Name = "txt_Nom";
             this.txt_Nom.Size = new System.Drawing.Size(215, 23);
             this.txt_Nom.TabIndex = 19;
             // 
             // txt_Prenom
             // 
-            this.txt_Prenom.Location = new System.Drawing.Point(104, 147);
+            this.txt_Prenom.Location = new System.Drawing.Point(104, 131);
             this.txt_Prenom.Name = "txt_Prenom";
             this.txt_Prenom.Size = new System.Drawing.Size(215, 23);
             this.txt_Prenom.TabIndex = 20;
             // 
             // txt_Adresse
             // 
-            this.txt_Adresse.Location = new System.Drawing.Point(104, 188);
+            this.txt_Adresse.Location = new System.Drawing.Point(104, 180);
             this.txt_Adresse.Name = "txt_Adresse";
             this.txt_Adresse.Size = new System.Drawing.Size(215, 23);
             this.txt_Adresse.TabIndex = 21;
@@ -154,6 +154,31 @@ namespace GestionFactureClient
             this.dgv_Client.Size = new System.Drawing.Size(485, 176);
             this.dgv_Client.TabIndex = 26;
             this.dgv_Client.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Client_CellContentClick_1);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "ID Client";
+            this.Column1.Name = "Column1";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Nom";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Prénom";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Adresse";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Ville";
+            this.Column6.Name = "Column6";
             // 
             // button6
             // 
@@ -260,31 +285,6 @@ namespace GestionFactureClient
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "ID Client";
-            this.Column1.Name = "Column1";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Nom";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Prénom";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Adresse";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Ville";
-            this.Column6.Name = "Column6";
             // 
             // Contact
             // 

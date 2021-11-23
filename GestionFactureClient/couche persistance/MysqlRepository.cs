@@ -13,7 +13,7 @@ namespace GestionFactureClient.couche_persistance
         {
             chaineDeConnexion = $"server={"127.0.0.1"};" +
             $"port={3306};uid={"root"};" +
-            $"pwd={"viveJesus123!"};database={"SystemeFacturation"}";
+            $"pwd={"Joelkamo1"};database={"SystemeFacturation"}";
             using (MySqlConnection conn = new MySqlConnection(chaineDeConnexion))
             {
 

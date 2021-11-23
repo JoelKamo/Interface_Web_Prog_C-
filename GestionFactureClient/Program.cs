@@ -14,6 +14,7 @@ namespace GestionFactureClient
 
         public static List<Articles> Articles = new List<Articles>();
         public static List<Client> Client = new List<Client>();
+        public static List<Facture> Facture = new List<Facture>();
 
         //systemeController smc = new systemeController();
 

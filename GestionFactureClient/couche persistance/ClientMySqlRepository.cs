@@ -80,16 +80,18 @@ namespace GestionFactureClient.couche_persistance
             conn.Open();
 
             using MySqlCommand cmd = new MySqlCommand("INSERT INTO Client(nomClient,prenomClient,adresseClient,villeClient) VALUES(@nom,@pre,@ad,@v)", conn);
-            cmd.Parameters.AddWithValue("nom", client.Nom);
-            cmd.Parameters.AddWithValue("pre", client.Prenom);
-            cmd.Parameters.AddWithValue("ad",client.Adresse);
-            cmd.Parameters.AddWithValue("v",client.Ville);
+            cmd.Parameters.AddWithValue("nomClient", client.Nom);
+            cmd.Parameters.AddWithValue("prenomClient", client.Prenom);
+            cmd.Parameters.AddWithValue("addresseClient",client.Adresse);
+            cmd.Parameters.AddWithValue("villeClient",client.Ville);
             cmd.Prepare();
             cmd.ExecuteNonQuery();
             client.IdClient = Convert.ToInt32(cmd.LastInsertedId);
 
 
         }
+
+        
         public void updateClient(Client c)
         {
            using MySqlConnection conn = new MySqlConnection(base.chaineDeConnexion);
@@ -121,5 +123,6 @@ namespace GestionFactureClient.couche_persistance
 
 
         }
+        
     }
 }

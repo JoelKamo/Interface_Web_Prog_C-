@@ -40,6 +40,11 @@ namespace GestionFactureClient
             this.txt_PrixDetail = new System.Windows.Forms.TextBox();
             this.txt_PrixVendu = new System.Windows.Forms.TextBox();
             this.dgv_Articles = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button9 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -50,11 +55,6 @@ namespace GestionFactureClient
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Articles)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -62,7 +62,7 @@ namespace GestionFactureClient
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(30, 96);
+            this.label6.Location = new System.Drawing.Point(30, 67);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(77, 15);
             this.label6.TabIndex = 6;
@@ -71,7 +71,7 @@ namespace GestionFactureClient
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 130);
+            this.label1.Location = new System.Drawing.Point(30, 106);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(114, 15);
             this.label1.TabIndex = 7;
@@ -80,7 +80,7 @@ namespace GestionFactureClient
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(33, 173);
+            this.label2.Location = new System.Drawing.Point(30, 149);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 15);
             this.label2.TabIndex = 8;
@@ -89,7 +89,7 @@ namespace GestionFactureClient
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(30, 206);
+            this.label3.Location = new System.Drawing.Point(30, 188);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 15);
             this.label3.TabIndex = 9;
@@ -113,28 +113,28 @@ namespace GestionFactureClient
             // 
             // txt_NomArticle
             // 
-            this.txt_NomArticle.Location = new System.Drawing.Point(175, 88);
+            this.txt_NomArticle.Location = new System.Drawing.Point(175, 64);
             this.txt_NomArticle.Name = "txt_NomArticle";
             this.txt_NomArticle.Size = new System.Drawing.Size(215, 23);
             this.txt_NomArticle.TabIndex = 12;
             // 
             // txt_QuantiteInventaire
             // 
-            this.txt_QuantiteInventaire.Location = new System.Drawing.Point(175, 122);
+            this.txt_QuantiteInventaire.Location = new System.Drawing.Point(175, 98);
             this.txt_QuantiteInventaire.Name = "txt_QuantiteInventaire";
             this.txt_QuantiteInventaire.Size = new System.Drawing.Size(215, 23);
             this.txt_QuantiteInventaire.TabIndex = 13;
             // 
             // txt_PrixDetail
             // 
-            this.txt_PrixDetail.Location = new System.Drawing.Point(175, 165);
+            this.txt_PrixDetail.Location = new System.Drawing.Point(175, 141);
             this.txt_PrixDetail.Name = "txt_PrixDetail";
             this.txt_PrixDetail.Size = new System.Drawing.Size(215, 23);
             this.txt_PrixDetail.TabIndex = 14;
             // 
             // txt_PrixVendu
             // 
-            this.txt_PrixVendu.Location = new System.Drawing.Point(175, 198);
+            this.txt_PrixVendu.Location = new System.Drawing.Point(175, 171);
             this.txt_PrixVendu.Name = "txt_PrixVendu";
             this.txt_PrixVendu.Size = new System.Drawing.Size(215, 23);
             this.txt_PrixVendu.TabIndex = 15;
@@ -150,12 +150,37 @@ namespace GestionFactureClient
             this.Column5,
             this.Column6});
             this.dgv_Articles.Enabled = false;
-            this.dgv_Articles.Location = new System.Drawing.Point(12, 233);
+            this.dgv_Articles.Location = new System.Drawing.Point(12, 221);
             this.dgv_Articles.Name = "dgv_Articles";
             this.dgv_Articles.RowTemplate.Height = 25;
-            this.dgv_Articles.Size = new System.Drawing.Size(584, 176);
+            this.dgv_Articles.Size = new System.Drawing.Size(584, 188);
             this.dgv_Articles.TabIndex = 25;
             this.dgv_Articles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Articles_CellContentClick);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "ID";
+            this.Column1.Name = "Column1";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Nom Article";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Quantité Inventaire";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Prix Détail";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Prix Vendu";
+            this.Column6.Name = "Column6";
             // 
             // button9
             // 
@@ -281,31 +306,6 @@ namespace GestionFactureClient
             this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "ID";
-            this.Column1.Name = "Column1";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Nom Article";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Quantité Inventaire";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Prix Détail";
-            this.Column5.Name = "Column5";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Prix Vendu";
-            this.Column6.Name = "Column6";
             // 
             // Gestion
             // 

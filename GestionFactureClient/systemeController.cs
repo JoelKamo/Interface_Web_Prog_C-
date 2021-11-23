@@ -17,10 +17,10 @@ namespace GestionFactureClient
 
         public systemeController()
         {
-            this.articleRepo = new ArticleMySqlRepository("127.0.0.1", "systemeFacturation", "root", "viveJesus123!");
-            this.clientRepo = new ClientMySqlRepository("127.0.0.1", "SystemeFacturation", "root", "viveJesus123!");
-            this.factureRepo = new FactureMySqlRepository("127.0.0.1", "SystemeFacturation", "root", "viveJesus123!", (ClientMySqlRepository)this.clientRepo, (FactureArticlesMySqlRepository)this.factArtRepo);
-            this.factArtRepo = new FactureArticlesMySqlRepository("127.0.0.1", "SystemeFacturation", "root", "viveJesus123!", (ArticleMySqlRepository)this.articleRepo);
+            this.articleRepo = new ArticleMySqlRepository("127.0.0.1", "systemeFacturation", "root", "Joelkamo1!");
+            this.clientRepo = new ClientMySqlRepository("127.0.0.1", "SystemeFacturation", "root", "Joelkamo1!");
+            this.factureRepo = new FactureMySqlRepository("127.0.0.1", "SystemeFacturation", "root", "Joelkamo1!", (ClientMySqlRepository)this.clientRepo, (FactureArticlesMySqlRepository)this.factArtRepo);
+            this.factArtRepo = new FactureArticlesMySqlRepository("127.0.0.1", "SystemeFacturation", "root", "Joelkamo1!", (ArticleMySqlRepository)this.articleRepo);
 
 
         }

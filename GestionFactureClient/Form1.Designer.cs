@@ -63,7 +63,7 @@ namespace GestionFactureClient
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Century", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.button4.ForeColor = System.Drawing.Color.Red;
-            this.button4.Location = new System.Drawing.Point(-2, 220);
+            this.button4.Location = new System.Drawing.Point(-2, 245);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(170, 55);
             this.button4.TabIndex = 3;
@@ -177,13 +177,13 @@ namespace GestionFactureClient
             // 
             this.button10.FlatAppearance.BorderSize = 0;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button10.Font = new System.Drawing.Font("Harrington", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.button10.ForeColor = System.Drawing.Color.Black;
             this.button10.Location = new System.Drawing.Point(174, 2);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(305, 31);
             this.button10.TabIndex = 8;
-            this.button10.Text = "Le plaisir de conduire";
+            this.button10.Text = "Magasiner en toute sécurité";
             this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button10.UseVisualStyleBackColor = true;
             // 
