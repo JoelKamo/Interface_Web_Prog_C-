@@ -39,7 +39,7 @@ namespace GestionFactureClient
                     total = total + this.ListeArticles[i].PrixVendu;
 
                 }
-
+                total = Math.Round(total, 2);
                 return total;
             }
         }
@@ -48,7 +48,7 @@ namespace GestionFactureClient
         {
             get
             {
-                return this.TotalVente * 0.1495;
+                return Math.Round(this.TotalVente * 0.1495,2);
             }
         }
 
@@ -62,11 +62,11 @@ namespace GestionFactureClient
                     total = total + this.ListeArticles[i].PrixDetail;
 
                 }
-
+                total = Math.Round(total, 2);
                 return total;
             }
         }
-        public double PrixFinal { get { return this.TotalVente + this.TotalTaxe; } }
+        public double PrixFinal { get { return Math.Round(this.TotalVente + this.TotalTaxe, 2); } }
 
 
 
@@ -76,11 +76,7 @@ namespace GestionFactureClient
             return $"idFacture:{this.IdFacture}, client:{this.ClientFacture.Prenom} nb article:{ this.ListeArticles.Count} \n cout d'achat : { this.TotalCout} \n vente total : {this.TotalVente} \n taxe :{this.TotalTaxe}\n Prix vente final:{this.PrixFinal} ";
         }
 
-        public int ID
-        {
-            get; set;
-        }
-
+  
         //public string NoFacture { get; set; }
 
         //Caracteristique de l'objet Facture

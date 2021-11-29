@@ -14,6 +14,7 @@ namespace GestionFactureClient
         public Gestion()
         {
             InitializeComponent();
+            charger();
         }
 
 
@@ -41,7 +42,7 @@ namespace GestionFactureClient
             dgv_Articles.Rows.Clear();
             for (int i = 0; i < liste.Count; i++)
             {
-                dgv_Articles.Rows.Add(liste[i].IdArticle, 0,
+                dgv_Articles.Rows.Add(liste[i].IdArticle,
                 liste[i].NomArticle, liste[i].QuantiteInventaire,
                 liste[i].PrixDetail, liste[i].PrixVendu);
             }

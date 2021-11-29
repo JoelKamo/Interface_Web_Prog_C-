@@ -1,7 +1,7 @@
 ﻿
 namespace GestionFactureClient
 {
-    partial class GestionsFacture
+    partial class GestionFactureArticles
     {
         /// <summary>
         ///  Required designer variable.
@@ -30,6 +30,7 @@ namespace GestionFactureClient
         private void InitializeComponent()
         {
             this.label6 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -39,14 +40,14 @@ namespace GestionFactureClient
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.dgv_FactureClients = new System.Windows.Forms.DataGridView();
-            this.lb_cmp = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Client = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Articles = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PrixArticle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.total = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lb_cmp = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_FactureClients)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,24 +56,33 @@ namespace GestionFactureClient
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(22, 17);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 15);
+            this.label6.Size = new System.Drawing.Size(51, 15);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Clients :";
+            this.label6.Text = "Factures";
             this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(122, 14);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(249, 23);
+            this.comboBox2.TabIndex = 12;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.cb_Clients_SelectedIndexChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(438, 15);
+            this.button1.Location = new System.Drawing.Point(438, 72);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 13;
-            this.button1.Text = "Ajouter";
+            this.button1.Text = "Supprimer";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(438, 47);
+            this.button2.Location = new System.Drawing.Point(438, 17);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 14;
@@ -82,17 +92,17 @@ namespace GestionFactureClient
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(438, 82);
+            this.button3.Location = new System.Drawing.Point(438, 43);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 15;
-            this.button3.Text = "Supprimer";
+            this.button3.Text = "Ajouter";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(438, 123);
+            this.button4.Location = new System.Drawing.Point(438, 101);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 23);
             this.button4.TabIndex = 16;
@@ -143,14 +153,40 @@ namespace GestionFactureClient
             this.dgv_FactureClients.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.Client,
-            this.Articles,
-            this.PrixArticle});
+            this.Column1,
+            this.PrixArticle,
+            this.total});
             this.dgv_FactureClients.Location = new System.Drawing.Point(22, 189);
             this.dgv_FactureClients.Name = "dgv_FactureClients";
             this.dgv_FactureClients.RowTemplate.Height = 25;
             this.dgv_FactureClients.Size = new System.Drawing.Size(491, 204);
             this.dgv_FactureClients.TabIndex = 24;
             this.dgv_FactureClients.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Clients_CellContentClick);
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID";
+            this.ID.Name = "ID";
+            // 
+            // Client
+            // 
+            this.Client.HeaderText = "Nom";
+            this.Client.Name = "Client";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "prix";
+            this.Column1.Name = "Column1";
+            // 
+            // PrixArticle
+            // 
+            this.PrixArticle.HeaderText = "tax";
+            this.PrixArticle.Name = "PrixArticle";
+            // 
+            // total
+            // 
+            this.total.HeaderText = "total";
+            this.total.Name = "total";
             // 
             // lb_cmp
             // 
@@ -161,58 +197,29 @@ namespace GestionFactureClient
             this.lb_cmp.TabIndex = 27;
             this.lb_cmp.Text = "../..";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(122, 17);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(249, 23);
-            this.comboBox1.TabIndex = 29;
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "ID";
-            this.ID.Name = "ID";
-            // 
-            // Client
-            // 
-            this.Client.HeaderText = "Clients";
-            this.Client.Name = "Client";
-            // 
-            // Articles
-            // 
-            this.Articles.HeaderText = "Nb - Articles";
-            this.Articles.Name = "Articles";
-            // 
-            // PrixArticle
-            // 
-            this.PrixArticle.HeaderText = "PrixTotal";
-            this.PrixArticle.Name = "PrixArticle";
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(22, 49);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(54, 15);
+            this.label9.Size = new System.Drawing.Size(52, 15);
             this.label9.TabIndex = 28;
-            this.label9.Text = "Factures:";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
+            this.label9.Text = "Articles :";
             // 
-            // comboBox2
+            // comboBox1
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(122, 48);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(249, 23);
-            this.comboBox2.TabIndex = 30;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(122, 46);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(249, 23);
+            this.comboBox1.TabIndex = 29;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.cb_TypeClients_SelectedIndexChanged);
             // 
-            // GestionsFacture
+            // GestionFactureArticles
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(545, 496);
-            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.lb_cmp);
@@ -225,8 +232,9 @@ namespace GestionFactureClient
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.label6);
-            this.Name = "GestionsFacture";
+            this.Name = "GestionFactureArticles";
             this.Text = "Gestion Factures Clients";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_FactureClients)).EndInit();
@@ -237,6 +245,7 @@ namespace GestionFactureClient
 
         #endregion
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
@@ -247,13 +256,13 @@ namespace GestionFactureClient
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.DataGridView dgv_FactureClients;
         private System.Windows.Forms.Label lb_cmp;
+        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Client;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Articles;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn PrixArticle;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn total;
     }
 }
 

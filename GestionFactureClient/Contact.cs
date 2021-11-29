@@ -15,6 +15,7 @@ namespace GestionFactureClient
         public Contact()
         {
             InitializeComponent();
+            charger();
         }
 
         // Ajouter Client
@@ -40,7 +41,7 @@ namespace GestionFactureClient
             dgv_Client.Rows.Clear();
             for (int i = 0; i < liste.Count; i++)
             {
-                dgv_Client.Rows.Add(liste[i].IdClient, 0,
+                dgv_Client.Rows.Add(liste[i].IdClient,
                 liste[i].Nom, liste[i].Prenom, liste[i].Adresse,
                 liste[i].Ville);
             }

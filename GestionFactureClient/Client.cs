@@ -25,15 +25,6 @@ namespace GestionFactureClient
 
         }
 
-        public int IDClient
-        {
-            get; set;
-        }
-
-        public string NoClient { get; set; }
-
-
-        //Caracteristique de l'objet Client
 
         public string Nom { get { return nom; } set { this.nom = value; } }
         public string Prenom { get { return prenom; } set { this.prenom = value; } }
@@ -42,25 +33,7 @@ namespace GestionFactureClient
         public int IdClient { get { return idClient; } set { this.idClient = value; } }
 
 
-
-
-        public static int cmp = 0;
-
-
-        public Client()
-        {
-            cmp++;
-            this.IDClient = cmp;
-        }
-
-        public Client(String NoClient)
-        {
-            cmp++;
-            this.IDClient = cmp;
-            this.NoClient = NoClient;
-
-
-        }
+     
 
         public override string ToString()
         {

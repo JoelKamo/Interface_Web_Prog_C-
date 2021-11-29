@@ -27,34 +27,11 @@ namespace GestionFactureClient
             set { this.idArticle = value; }
         }
 
-        public string NoFacture { get; set; }
-
-        //Caracteristique de l'objet Facture
-
-        //public string NoSerie { get; set; }
         public string NomArticle { get { return nomArticle; } set { this.nomArticle = value; } }
         public int QuantiteInventaire { get { return quantInventaire; } set { this.quantInventaire = value; } }
         public double PrixDetail { get { return prixDetail; } set { this.prixDetail = value; } }
         public double PrixVendu { get { return prixVente; } set { this.prixVente = value; } }
 
-        /*
-        public Clients C { get; set; }
-         */
-
-        public static int cmp = 0;
-
-
-
-        /*
-        public Articles(String NoSerie)
-        {
-            cmp++;
-            this.ID = cmp;
-            this.NoSerie = NoSerie;
-
-
-        }
-        */
 
         public override string ToString()
         {

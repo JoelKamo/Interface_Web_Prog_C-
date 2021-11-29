@@ -10,6 +10,9 @@
     <Compile Update="Gestion.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="GestionFactureArticles.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="GestionsFacture.cs">
       <SubType>Form</SubType>
     </Compile>
