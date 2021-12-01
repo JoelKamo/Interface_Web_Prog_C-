@@ -243,7 +243,7 @@ namespace GestionFactureClient
                     x = listeF[i];
                 }
 
-            }
+            } 
 
             smc.FactureSelect(x.IdFacture);
             List<Articles> listeA = x.ListeArticles;
